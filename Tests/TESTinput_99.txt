@@ -1,0 +1,25 @@
+7
+23 7
+C#.#CCF
+.CFC..C
+#C#C..F
+F#.FF.C
+F.#C.FF
+C.CF.C#
+F#F#.FF
+...C.CC
+.FF#FF#
+#CF#FF.
+C#F#CC.
+CF#CCCC
+#FFFF##
+FCFF.FF
+.F#C#FC
+.#F.F#F
+.#.#..C
+CF.F.F#
+C...#C.
+#..#C#.
+FC..FFC
+#FC#F#C
+C.#FCCF

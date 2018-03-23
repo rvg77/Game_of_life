@@ -1,0 +1,21 @@
+4
+19 6
+#FCF#.
+#C####
+C.#CCC
+C.#FF#
+FF.#C#
+CFF#FF
+.#F.FC
+###C#C
+#.C.FC
+#.###.
+.#F.##
+CFF#.C
+.#.F.F
+.#CF#C
+FC.CC.
+#F.CF.
+.FFCF#
+F.#.C.
+.###C.

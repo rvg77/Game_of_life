@@ -1,0 +1,6 @@
+2
+4 13
+FC.##..FC.#CF
+.F.FCF.CF#.C.
+#CF#F..F#C##C
+.#FCCC.F..##C

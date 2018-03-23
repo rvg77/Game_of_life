@@ -1,0 +1,17 @@
+4
+15 12
+.#.##C..FFCC
+FF#.CFCC#.FF
+FFF...C.##FF
+CCCFF.C.C..C
+.C#F.FCC.F.#
+FCF#..FFCCCF
+#F.CF#.....C
+#.C.C.CF..#F
+#F.#F##CFF.C
+####CF#CFFF#
+#C.C.CCCFCCF
+FF.FCFFC#C#.
+C..F.#..C##C
+CCC..#.FCFCF
+#.FCCFFFCC..

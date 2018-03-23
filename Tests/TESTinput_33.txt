@@ -1,0 +1,7 @@
+7
+5 27
+.CCFCFF#FF#C#C##.##F.CCCFFF
+#.C.FCFFFFC.....FC.F.F#F###
+FC#CC.#CFCF.FCC#C#.#FFFCF#C
+#FCFC.C##C.....C.F.FF#.F#FF
+.F##FFCCF.CF.F.C..FF#C.F.C.

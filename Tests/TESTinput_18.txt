@@ -1,0 +1,15 @@
+6
+13 27
+..#C#FFC#CCF..C####CFFF..F.
+#...#C#F#CC.CF#CC##.FC###.#
+C#.CC.FCF#.FFFC#CFC.F##.CC.
+F.CC.FF.C#.FF.C.FC.C#FCC#C#
+CFFCC.C.C.F.#C#.FCFFFCC.F..
+.C#..F#.CC##C##F..C#CFC#CC.
+C.#.CF#.####F.##F...#F#...#
+#CCFC#FCCF#.FFFCF#C.F.F#.FF
+.FFF.CCF.FF#F..#.F##F#C#F.C
+#CF.#FF##FF.C.C.#.##F#.F###
+C..F#F...CFFCFCCF..FF##FFF#
+.#F.C.FCC#C##.FC##.F.F#C.FC
+FC#F.C##CCFFF.CC.CCF#CFCFFF

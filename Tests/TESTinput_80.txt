@@ -1,0 +1,8 @@
+5
+6 30
+#F#CC.....C#F#...CCCFF.C.F.FC#
+..F#C..C#FFF#.CFFC.CFF..F#.#F.
+F#CCC.C..#FC..CCC....FF###FFC.
+.F#F.##F.#FC.FCF.#.C#FC.C.C.C.
+.#CFCC#..CC#FCC##.#FFC...FCC..
+CCF#C.FC#.FF#F.CF#FF#.FCF#.CCF

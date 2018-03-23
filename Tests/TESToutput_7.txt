@@ -1,0 +1,7 @@
+.FFFF#..#.FF##.
+F..#F.#.#F.CC..
+..###..CC#FFC#.
+FF##..CC..F#.F.
+.CC..#C#F#F#FF#
+.C.##C.FF..#.F.
+.CCCCC.FF#FF..#

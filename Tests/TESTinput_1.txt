@@ -1,0 +1,12 @@
+6
+10 5
+C#CFC
+CFFC#
+#FFC.
+F#C##
+.#FC#
+#.FF.
+..FC#
+##..F
+.C#CC
+.FCCC

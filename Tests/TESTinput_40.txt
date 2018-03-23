@@ -1,0 +1,12 @@
+6
+10 28
+C.#FF.FC.F.##.F..###C.#FFFC#
+##.#.###FF#CC#FC#..#..#.F..C
+...CC##.F..#...C.C#FC.#.#.#C
+C#FC#..C#FFFC#F##CFF..C...CF
+...C#C#..FCC.CCCCFFF#F.C..FC
+##.#F.#F#CF###.#F.FC#C##C##C
+CF..C#..FFCFF##CCCCF.#CCFCCC
+F#####..F#CF#C.C#FC.#C.C#FC#
+###..FF##FF#CF#...FC.CC##FC.
+C.FF..FFC#CC#C#F##F.#CFC#F..

@@ -1,0 +1,8 @@
+7
+6 16
+CCFCC..C##F.#C.#
+.F#F.CF#.FCFF#.C
+.F#..C#..#FFCCC#
+FFC###..CFCC#C#C
+C.C#FFFCFF#F.C##
+FCF#.C..C.#..#F#

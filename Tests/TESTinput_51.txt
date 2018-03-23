@@ -1,0 +1,13 @@
+4
+11 6
+F##F#.
+.F#C.F
+.CC#C#
+.FCCFC
+F##CCC
+.FCCC.
+..CFCF
+CFF#C.
+FF#CC#
+C..CFF
+#F#FC#

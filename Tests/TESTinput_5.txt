@@ -1,0 +1,8 @@
+7
+6 28
+..CCCC#..##F..CFFF##F..C.C##
+#.F###CFFF.F#.F#F#C###..C.FF
+F.CF#C###FCFF##C.#F##F#..#C.
+.CFF..F.CCFCF##.#.F.F.C#C.#F
+#F#.CF#.F##..#.C##FCFFC.##FF
+C.#FF.#F#.C#C..#CC.FFFFF..##

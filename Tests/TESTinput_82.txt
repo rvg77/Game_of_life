@@ -1,0 +1,7 @@
+4
+5 10
+#.F.C##.F#
+C#FCCC.CFF
+C..F#F.FCC
+##C.#F#FF.
+F.#.#.FCFF
