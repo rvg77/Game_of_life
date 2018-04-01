@@ -22,6 +22,6 @@ for t in range(tests_n):
     for i in range(h):
         s = ''.join(random.choices(['.', '#', 'F', 'C'], k=w))
         test += '\n' + s
-    file = open('./Tests/TESTinput_' + str(t) + '.txt', 'w')
+    file = open('./Sys_tests/TESTinput_' + str(t) + '.txt', 'w')
     file.write(test)
     file.close()

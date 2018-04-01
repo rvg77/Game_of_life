@@ -7,7 +7,7 @@ def get_inf(lines):
 
     ocean = [[None] * w for j in range(h)]
 
-    for i in range(2, len(lines)):
+    for i in range(2, 2 + h):
 
         line = lines[i]
         for j in range(w):

@@ -1,28 +1,7 @@
 import argparse
 import Modeling_lib
 import sys
-
-
-def parse_input(f):
-    n = int(f.readline())
-    h, w = map(int, f.readline().split(' '))
-
-    ocean = [[None] * w for j in range(h)]
-
-    for i in range(h):
-
-        line = f.readline()
-        for j in range(w):
-            if line[j] == 'F':
-                ocean[i][j] = Modeling_lib.Fish()
-            elif line[j] == 'C':
-                ocean[i][j] = Modeling_lib.Crayfish()
-            elif line[j] == '.':
-                ocean[i][j] = Modeling_lib.Void()
-            elif line[j] == '#':
-                ocean[i][j] = Modeling_lib.Rock()
-    return n, h, w, ocean
-
+import Parse_input
 
 parser = argparse.ArgumentParser()
 
@@ -36,9 +15,11 @@ res = parser.parse_args()
 
 if parser.parse_args().input != 'sys.stdin':
     with open(parser.parse_args().input, 'r') as file:
-        n, h, w, ocean = parse_input(file)
+        lines = file.read().split('\n')
+        n, h, w, ocean = Parse_input.get_inf(lines)
 else:
-    n, h, w, ocean = parse_input(sys.stdin)
+    lines = sys.stdin.read().split('\n')
+    n, h, w, ocean = Parse_input.get_inf(lines)
 
 first_gen = Modeling_lib.Generation(h, w, False)
 

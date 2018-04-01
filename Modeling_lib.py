@@ -54,12 +54,31 @@ class Void:
 
 class Generation:
     def __init__(self, h, w, is_thor):
+        if type(w) is not int:
+            raise TypeError("type of w argument should be int")
+        if w <= 0:
+            raise RuntimeError('w should be positive')
+        if type(h) is not int:
+            raise TypeError("type of h argument should be int")
+        if h <= 0:
+            raise RuntimeError('h should be positive')
+        if type(is_thor) is not bool:
+            raise TypeError("type of num argument should be int")
+
         self.weight = w
         self.height = h
         self.is_thor = is_thor
         self.ocean = [[None] * w for i in range(h)]
 
     def set_ocean(self, ocean):
+        if type(ocean) is not list:
+            raise TypeError('type of ocean should be list')
+        if len(ocean) != self.height:
+            raise RuntimeError('Incorrect h')
+        for i in range(self.height):
+            if len(ocean[i]) != self.weight:
+                raise RuntimeError('Incorrect w')
+
         self.ocean = ocean
 
     def try_to_reach(self, xx, yy):
@@ -106,6 +125,9 @@ class Generation:
 
 class Life:
     def __init__(self, gen):
+        if not isinstance(gen, Generation):
+                raise RuntimeError('gen should be an instance of Generation')
+
         self.generations = [gen]
 
     def next_generation(self):
@@ -113,6 +135,11 @@ class Life:
         pass
 
     def get_generation(self, n):
+        if type(n) is not int:
+            raise TypeError('type of n should be int')
+        if n < 0:
+            raise RuntimeError('''n should be non-negative''')
+
         while len(self.generations) <= n:
             self.next_generation()
 
