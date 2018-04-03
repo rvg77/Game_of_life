@@ -15,9 +15,9 @@ class TestGeneration:
         with pytest.raises(RuntimeError):
             Modeling_lib.Generation(1, -1, False)
         gen = Modeling_lib.Generation(10, 10, True)
-        assert (len(gen.ocean) == 10)
-        for i in range(len(gen.ocean)):
-            assert (len(gen.ocean[i]) == 10)
+        assert (len(gen._ocean) == 10)
+        for i in range(len(gen._ocean)):
+            assert (len(gen._ocean[i]) == 10)
 
     def test_setter(self):
         gen = Modeling_lib.Generation(1, 1, True)
@@ -29,7 +29,7 @@ class TestGeneration:
             gen.set_ocean([[]])
         ocean = [[Modeling_lib.Fish()]]
         gen.set_ocean(ocean)
-        assert (gen.ocean == ocean)
+        assert (gen._ocean == ocean)
 
     pass
 
@@ -56,6 +56,6 @@ class TestLife:
         with pytest.raises(RuntimeError):
             life.get_generation(-1)
         life.next_generation()
-        assert life.generations[-1].ocean[0][0].name == '.'
+        assert life.generations[-1]._ocean[0][0].name == '.'
 
     pass

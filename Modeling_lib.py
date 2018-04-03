@@ -1,5 +1,8 @@
+class Cell:
+    pass
 
-class Fish:
+
+class Fish(Cell):
     name = 'F'
 
     @staticmethod
@@ -10,10 +13,8 @@ class Fish:
         else:
             return Void()
 
-    pass
 
-
-class Crayfish:
+class Crayfish(Cell):
     name = 'C'
 
     @staticmethod
@@ -24,20 +25,16 @@ class Crayfish:
         else:
             return Void()
 
-    pass
 
-
-class Rock:
+class Rock(Cell):
     name = '#'
 
     @staticmethod
     def update(neighbours):
         return Rock()
 
-    pass
 
-
-class Void:
+class Void(Cell):
     name = '.'
 
     @staticmethod
@@ -49,11 +46,17 @@ class Void:
         else:
             return Void
 
-    pass
-
 
 class Generation:
+    """Describes a generation in particular moment."""
+
     def __init__(self, h, w, is_thor):
+        """Initializes a generation.
+
+        h and w should be int(height and width of the ocean), is_thor should be bool.
+
+        """
+
         if type(w) is not int:
             raise TypeError("type of w argument should be int")
         if w <= 0:
@@ -65,31 +68,37 @@ class Generation:
         if type(is_thor) is not bool:
             raise TypeError("type of num argument should be int")
 
-        self.weight = w
-        self.height = h
-        self.is_thor = is_thor
-        self.ocean = [[None] * w for i in range(h)]
+        self._width = w
+        self._height = h
+        self._is_thor = is_thor
+        self._ocean = [[None] * w for i in range(h)]
 
     def set_ocean(self, ocean):
+        """Sets ocean.
+
+        Ocean should be a two-dimensional array.
+
+        """
+
         if type(ocean) is not list:
             raise TypeError('type of ocean should be list')
-        if len(ocean) != self.height:
+        if len(ocean) != self._height:
             raise RuntimeError('Incorrect h')
-        for i in range(self.height):
-            if len(ocean[i]) != self.weight:
+        for i in range(self._height):
+            if len(ocean[i]) != self._width:
                 raise RuntimeError('Incorrect w')
 
-        self.ocean = ocean
+        self._ocean = ocean
 
     def try_to_reach(self, xx, yy):
-        if self.is_thor:
-            return self.ocean[xx % self.height][yy % self.weight]
+        if self._is_thor:
+            return self._ocean[xx % self._height][yy % self._width]
         else:
-            if xx < 0 or xx >= self.height:
+            if xx < 0 or xx >= self._height:
                 return None
-            if yy < 0 or yy >= self.weight:
+            if yy < 0 or yy >= self._width:
                 return None
-            return self.ocean[xx][yy]
+            return self._ocean[xx][yy]
 
     def get_neighbours(self, x, y):
         ans = list()
@@ -103,46 +112,60 @@ class Generation:
 
     def update(self, x, y):
         neighbours = [i.name for i in self.get_neighbours(x, y) if i is not None]
-        return self.ocean[x][y].update(neighbours)
+        return self._ocean[x][y].update(neighbours)
 
     def next(self):
-        new_gen = Generation(self.height, self.weight, self.is_thor)
-        for i in range(self.height):
-            for j in range(self.weight):
-                new_gen.ocean[i][j] = self.update(i, j)
+        """Returns next generation after self."""
+
+        new_gen = Generation(self._height, self._width, self._is_thor)
+        for i in range(self._height):
+            for j in range(self._width):
+                new_gen._ocean[i][j] = self.update(i, j)
         return new_gen
 
-    def print_gen(self):
+    def __str__(self, *args, **kwargs):
+        """Returns graphical view of generation in string format."""
+
         s = ''
-        for line in self.ocean:
+        for line in self._ocean:
             for i in line:
                 s += i.name
             s += '\n'
         return s
 
-    pass
-
 
 class Life:
+    """Descibes the history of the game from the beginning."""
+
     def __init__(self, gen):
+        """Initialize self. gen should be an object of class Generation."""
+
         if not isinstance(gen, Generation):
                 raise RuntimeError('gen should be an instance of Generation')
 
         self.generations = [gen]
 
     def next_generation(self):
+        """Adds next generation to list of generations."""
+
         self.generations.append(self.generations[-1].next())
-        pass
 
     def get_generation(self, n):
+        """Calculates all generations up to the n (inclusevely) and returns the last.
+
+        N should be type of int.
+
+        """
+
         if type(n) is not int:
             raise TypeError('type of n should be int')
         if n < 0:
             raise RuntimeError('''n should be non-negative''')
 
+        if len(self.generations) > n:
+            return self.generations[n]
+
         while len(self.generations) <= n:
             self.next_generation()
 
         return self.generations[-1]
-
-    pass

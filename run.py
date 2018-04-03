@@ -29,6 +29,6 @@ life = Modeling_lib.Life(first_gen)
 
 if parser.parse_args().output != 'sys.stdout':
     with open(parser.parse_args().output, 'w') as file:
-        file.write(life.get_generation(n).print_gen())
+        file.write(str(life.get_generation(n)))
 else:
-    sys.stdout.write(life.get_generation(n).print_gen())
+    sys.stdout.write(str(life.get_generation(n)))

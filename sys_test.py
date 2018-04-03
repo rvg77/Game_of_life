@@ -17,7 +17,7 @@ for test_n in range(tests):
     life = Modeling_lib.Life(first_gen)
 
     file = open('./Sys_tests/TESTmyoutput_' + str(test_n) + '.txt', 'w')
-    file.write(life.get_generation(n).print_gen())
+    file.write(str(life.get_generation(n)))
     file.close()
 
     if open('./Sys_tests/TESTmyoutput_' + str(test_n) + '.txt').read() == open('./Sys_tests/TESToutput_'
