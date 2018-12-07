@@ -8,4 +8,4 @@ Good description on the [wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_
 * [test_unittest.py](https://github.com/rvg77/Game_of_life/blob/dev/test_unittest.py) - unit-tests <br />
 * [sys_test.py](https://github.com/rvg77/Game_of_life/blob/dev/sys_test.py) - script for system testing <br />
 * [gen.py](https://github.com/rvg77/Game_of_life/blob/dev/gen.py) - system test generator <br />
-* [Parse_input.py](https://github.com/rvg77/Game_of_life/blob/dev/Parse_input.py) - module which purpose is converting string format to useful form<br />
+* [Parse_input.py](https://github.com/rvg77/Game_of_life/blob/dev/Parse_input.py) - module converts string format to useful form<br />
